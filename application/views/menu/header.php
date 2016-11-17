@@ -13,6 +13,7 @@
 	<li><a href="<?php echo site_url('Etusivu'); ?>">Etusivu</a></li>
 	<li><a href="<?php echo site_url('asiakas/listaa'); ?>">Asiakas</a></li>
 	<li><a href="<?php echo site_url('Login'); ?>">Login</a></li>
+	<li><a href="<?php echo site_url('Kortti'); ?>">Kortti</a></li>
 
 </ul>
 

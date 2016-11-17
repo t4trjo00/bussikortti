@@ -14,8 +14,6 @@ public function index() {
        
     }
 
-
-
 		public function listaa()
 		{
 			$this->load->model('Asiakas_model');
@@ -23,5 +21,6 @@ public function index() {
 			$data['sivun_sisalto']='asiakas/listaa';
 			$this->load->view('menu/sisalto',$data);
 		}
+
 }
  
