@@ -24,7 +24,7 @@ class VerifyLogin extends CI_Controller {
    else
    {
      //Go to private area
-     redirect('home', 'refresh');
+     redirect('Etusivu');
    }
 
  }
@@ -52,7 +52,7 @@ class VerifyLogin extends CI_Controller {
    }
    else
    {
-     $this->form_validation->set_message('check_database', 'Invalid username or password');
+     $this->form_validation->set_message('check_database', 'Väärä käyttäjänimi tai salasana.');
      return false;
    }
  }

@@ -1,5 +1,5 @@
 <h1>Asiakkaat</h1>
-<table border=1>
+<table border=3>
 <tr><th>Etunimi</th><th>Sukunimi</th><th>Sähköposti</th><th>Puhelin</th><th>Muokkaa</th></tr>
 <?php
 foreach ($asiakkaat as $rivi) 
@@ -8,11 +8,13 @@ foreach ($asiakkaat as $rivi)
 
 
 
-	echo '<td><a href="naytaMuokattavaAsiakas/'.$rivi['id_asiakas'].'">Muokkaa</a>';
+	echo '<td><a href="nayta_muokattavat_asiakkaat">Muokkaa</a>';
 	echo "</td></tr>";
 
 	
 }
+
+
 
 ?>
 

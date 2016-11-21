@@ -3,9 +3,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Kortti extends CI_Controller 
 	{
-/* public function index() {
+public function index() {
 	echo "asdasd";
-}*/
+}
 
 
 
