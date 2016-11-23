@@ -1,4 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url('style/css/bootstrap.min.css');?>">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
 <h1>Muokkaa asiakkaiden tietoja</h1>
+
+
+<table class="table table-striped table-bordered table-hover table-condensed">
+
+
 <form action="muokkaa_asiakkaat" method="POST">
 <TABLE>
 <tr><th>Etunimi</th><th>Sukunimi</th><th>Email</th><th>Puhelin</th></tr>

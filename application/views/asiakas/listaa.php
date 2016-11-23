@@ -1,5 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url('style/css/bootstrap.min.css');?>">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+
+
 <h1>Asiakkaat</h1>
-<table border=3>
+<table class="table table-striped table-bordered table-hover table-condensed">
 <tr><th>Etunimi</th><th>Sukunimi</th><th>Sähköposti</th><th>Puhelin</th><th>Muokkaa</th></tr>
 <?php
 foreach ($asiakkaat as $rivi) 
@@ -23,3 +37,4 @@ foreach ($asiakkaat as $rivi)
 
 </table>
 
+</hr>
