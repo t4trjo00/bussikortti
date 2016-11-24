@@ -1,39 +1,41 @@
+
+<!DOCTYPE html>
 <html>
-<?php
-
-if (isset($this->session->userdata['logged_in'])) {
-$username = ($this->session->userdata['logged_in']['username']);
-
-} else {
-header("location: login");
-}
-?>
-
 <head>
-<title>Admin Page</title>
-<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style.css">
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Open+Sans+Condensed:300|Raleway' rel='stylesheet' type='text/css'> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url('style/css/bootstrap.min.css');?>">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-
 <body>
-<div id="profile">
+
+<div class="container">
 
 
+<h1>Kortit</h1>
+
+<table class="table table-bordered table-hover table-condensed">
+
+
+
+
+<tr><th>id_kortti</th><th>Pin</th><th>Saldo</th><th>asiakas id</th><th>Maksu id</th></tr>
 <?php
-echo "Hello <b id='welcome'><i>" . $username . "</i> !</b>";
-echo "<br/>";
-echo "<br/>";
-echo "Welcome to Admin Page";
-echo "<br/>";
-echo "<br/>";
-echo "Your Username is: " . $username;
-echo "<br/>";
-echo "<br/>";
+foreach ($kortit as $rivi) 
+{
+	echo '<tr><td>'
+	.$rivi['id_kortti'].'</td><td>'
+	.$rivi['pin_kortti'].'</td><td>'
+	.$rivi['saldo'].'</td><td>'
+	.$rivi['asiakas_id_asiakas'].'</td><td>'
+	.$rivi['maksu_id_maksu'].'</td></tr>';
+}
+
+
 
 ?>
 
-<b id="logout"><a href="logout">Logout</a></b>
-</div>
-<br/>
-</body>
-</html>
+
+
+
+</table>

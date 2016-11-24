@@ -1,6 +1,12 @@
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 </hr>
 <style>
 .bg-4 { 
@@ -10,6 +16,6 @@
 </style>
 
 <footer class="container-fluid bg-4 text-center">
-  <p> juupatijuu</p> 
+  <p> terve</p> 
 </body>
 </html>
