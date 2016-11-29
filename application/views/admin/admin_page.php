@@ -1,6 +1,20 @@
 
 <!DOCTYPE html>
 <html>
+<?php
+
+if (isset($this->session->userdata['logged_in'])) {
+$username = ($this->session->userdata['logged_in']['username']);
+$admin = ($this->session->userdata['logged_in']['admin']);
+if($admin==1);
+
+else header("location: http://[::1]/bussikortti/index.php/Etusivu");
+
+} else {
+header("location: login");
+}
+?>
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="<?php echo base_url('style/css/bootstrap.min.css');?>">
@@ -10,18 +24,26 @@
 <body>
 
 <div class="container">
+	<h1>Kortit</h1>
+	<table class="table table-bordered table-hover table-condensed">
+
+		<p>Adminin sivu</p>
+		<p>Adminin sivu</p>
+		<p>Adminin sivu</p>
+		<p>Adminin sivu</p>
+		<p>Adminin sivu</p>
+		<p>Adminin sivu</p>
+		<p>Adminin sivu</p>
 
 
-<h1>Kortit</h1>
-
-<table class="table table-bordered table-hover table-condensed">
 
 
 
 
-<tr><th>id_kortti</th><th>Pin</th><th>Saldo</th><th>asiakas id</th><th>Maksu id</th></tr>
-<?php
-foreach ($kortit as $rivi) 
+
+		<tr><th>id_kortti</th><th>Pin</th><th>Saldo</th><th>asiakas id</th><th>Maksu id</th></tr>
+		<?php
+	foreach ($kortit as $rivi) 
 {
 	echo '<tr><td>'
 	.$rivi['id_kortti'].'</td><td>'
@@ -31,6 +53,7 @@ foreach ($kortit as $rivi)
 	.$rivi['maksu_id_maksu'].'</td></tr>';
 }
 
+echo "Your Username is " . $username;
 
 
 ?>

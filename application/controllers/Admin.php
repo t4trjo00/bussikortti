@@ -5,6 +5,7 @@ class Admin extends CI_Controller
 	{
 public function index() {
 	echo "asdasd";
+	echo "Your Username is " . $username;
 }
 
 

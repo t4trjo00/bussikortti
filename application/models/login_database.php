@@ -2,7 +2,7 @@
 
 Class Login_Database extends CI_Model {
 
-// Insert registration data in database
+/*/ Insert registration data in database
 public function registration_insert($data) {
 
   // Query to check whether username already exist or not
@@ -24,7 +24,7 @@ if ($query->num_rows() == 0)
 } else {
 return false;
 }
-}
+}*/
 
 // Read data using username and password
 public function login($data) {
@@ -60,6 +60,21 @@ return false;
 }
 }
 
+// Read data from database to show data in admin page
+/*
+$condition = "admin =" . "'" . $admin_value . "'";
+$this->db->select('*');
+$this->db->from('tunnus');
+$this->db->where('admin',$admin_value);
+$this->db->limit(1);
+$query = $this->db->get();
+
+if ($query->num_rows() == 1) {
+return $query->result();
+} else {
+return false;
+}
+}*/
 }
 
 ?>

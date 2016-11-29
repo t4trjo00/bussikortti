@@ -77,12 +77,10 @@ header("location: login");
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
        
-		    <li><a href="<?php echo site_url('asiakas/listaa'); ?>">Asiakas</a></li>
-		    <li><a href="<?php echo site_url('asiakas/lisaa'); ?>">Lisää asiakas</a></li>
-        <li><a href="<?php echo site_url('asiakas/nayta_poistettavat'); ?>">Poista asiakas</a></li>
-		    <li><a href="<?php echo site_url('Kortti/listaa_kortti'); ?>">Kortti</a></li>
+
 		    
-        <li><a href="<?php echo site_url('admin/admin_page'); ?>">Oma sivu</a></li>
+        <li><a href="<?php echo site_url('home/home_view'); ?>">Oma sivu</a></li>
+        
       
       </ul>
       <ul class="nav navbar-nav navbar-right">

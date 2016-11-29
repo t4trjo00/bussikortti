@@ -2,6 +2,19 @@
 <form action="paivita_asiakas" method="POST">
 <!DOCTYPE html>
 <html>
+<?php
+
+if (isset($this->session->userdata['logged_in'])) {
+$username = ($this->session->userdata['logged_in']['username']);
+$admin = ($this->session->userdata['logged_in']['admin']);
+if($admin==1);
+else header("location: http://[::1]/bussikortti/index.php/Etusivu");
+
+
+} else {
+header("location: login");
+}
+?>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="<?php echo base_url('style/css/bootstrap.min.css');?>">

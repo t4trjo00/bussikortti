@@ -14,7 +14,10 @@
     <p>Hieno juttu</p> 
   </div>
   <p>Tähän voi kirjoittaa jotakin infoa.</p> 
- 
+  
+  <li><a href="http://www.iltasanomat.fi/viihde/art-2000004885579.html" ><span class="glyphicon glyphicon-log-out"></span> Uutiset</a></li>
+  <li><a href="https://www.miniclip.com/games/supercar-showdown/en/#t-ss-S" ><span class="glyphicon glyphicon-log-out"></span> Uutiset</a></li>
+
 </div>
 
 
