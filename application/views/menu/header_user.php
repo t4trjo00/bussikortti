@@ -79,7 +79,7 @@ header("location: login");
        
 
 		    
-        <li><a href="<?php echo site_url('home/home_view'); ?>">Oma sivu</a></li>
+        <li><a href="<?php echo site_url('kayttaja/kayttaja_page'); ?>">Oma sivu</a></li>
         
       
       </ul>

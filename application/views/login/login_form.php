@@ -14,6 +14,7 @@ header("location: http://localhost/login/index.php/user_authentication/user_logi
 
 
 <title>Kirjaudu sisään</title>
+
   <br>
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style.css">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Open+Sans+Condensed:300|Raleway' rel='stylesheet' type='text/css'>
@@ -51,8 +52,9 @@ header("location: http://localhost/login/index.php/user_authentication/user_logi
 
 <form>
   <div class="form-horizontal">
-      <label class="control-label col-sm-2" for="tunnus">Käyttäjänimi:</label>
-      <div class="col-sm-10">
+      <label class="control-label col-sm-1" for="tunnus">Käyttäjänimi:</label>
+      <div class="col-sm-1">
+      
         <input type="text" class="form-control" name="username" id="name" placeholder="tunnus">
         </div>
     
@@ -62,15 +64,15 @@ header("location: http://localhost/login/index.php/user_authentication/user_logi
 
   <br>
   <div class="form-horizontal">
-  <label class="control-label col-sm-2" for="tunnus">Salasana:</label>
-      <div class="col-sm-10">
-        <input type="password" class="form-control" name="password" id="password" placeholder="*********">
+  <label class="control-label col-sm-1" for="tunnus">Salasana:</label>
+      <div class="col-sm-1">
+        <input type="password" class="form-control" name="password" id="password" placeholder="salis">
     
   </div>
     <br/>
     <br/>
     <br>
-     <div class="col-sm-offset-2 col-sm-10">
+     <div class="col-sm-offset-1 col-sm-1">
       <input type="submit" value=" Login " name="submit"/><br />
       </div>
 <!-- <a href="<?php //echo base_url() ?>index.php/user_authentication/user_registration_show">To SignUp Click Here</a>  -->

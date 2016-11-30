@@ -9,18 +9,26 @@
 <body>
 
 <div class="container">
+<img src="http://www.koirakissaklinikka.fi/images/artikkelit/kissa-artikkelit/kissalaihdutus.jpg" />
   <div class="jumbotron">
     <h1>Bussikortti järjestelmän etusivu</h1>
     <p>Hieno juttu</p> 
   </div>
+
+
+
+
+
+
+
   <p>Tähän voi kirjoittaa jotakin infoa.</p> 
   
-  <li><a href="http://www.iltasanomat.fi/viihde/art-2000004885579.html" ><span class="glyphicon glyphicon-log-out"></span> Uutiset</a></li>
-  <li><a href="https://www.miniclip.com/games/supercar-showdown/en/#t-ss-S" ><span class="glyphicon glyphicon-log-out"></span> Uutiset</a></li>
+  <li><a href="http://www.iltasanomat.fi/viihde/art-2000004885579.html" ><span class="glyphicon glyphicon-bell"></span> Uutiset</a></li>
+  <li><a href="https://www.miniclip.com/games/supercar-showdown/en/#t-ss-S" ><span class="glyphicon glyphicon-sunglasses"></span> Rallipeli</a></li>
+
 
 </div>
-
-
-
-
+<?php 
+$id_tunnus = ($this->session->userdata['logged_in']['id_tunnus']);
+echo "Your Username is " . $id_tunnus; ?>
 

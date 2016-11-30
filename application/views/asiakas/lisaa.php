@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html>
+
 <?php
 
 if (isset($this->session->userdata['logged_in'])) {

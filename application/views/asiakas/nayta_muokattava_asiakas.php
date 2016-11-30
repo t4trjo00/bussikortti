@@ -1,7 +1,6 @@
 
 <form action="paivita_asiakas" method="POST">
-<!DOCTYPE html>
-<html>
+
 <?php
 
 if (isset($this->session->userdata['logged_in'])) {
@@ -45,3 +44,4 @@ echo '<input type="hidden" name="id" value="'.$asiakas[0]['id_asiakas'].'"/>';
 </table>
 <input type="submit" name="btnTallenna" value="Tallenna"/>
 </form>
+</div>
