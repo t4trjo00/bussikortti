@@ -13,8 +13,11 @@
 <img src="http://setosa.io/bus/styles/busicon-01.svg" />
 
   <div class="jumbotron">
-    <h1>Bussikortti järjestelmän etusivu</h1>
-    <p>Hieno juttu</p> 
+    <h1>Bussikorttijärjestelmän etusivu</h1>
+    <p>Tervetuloa ohjelmointiprojektin nettisivuille</p> 
+    <?php
+echo "Kello on " . date("h:i");
+?>
   </div>
 
 
@@ -23,7 +26,7 @@
 
 
 
-  <p>Tähän voi kirjoittaa jotakin infoa.</p> 
+  <p>Viihdykettä.</p> 
   
   <li><a href="http://www.iltasanomat.fi/viihde/art-2000004885579.html" ><span class="glyphicon glyphicon-bell"></span> Uutiset</a></li>
   <li><a href="https://www.miniclip.com/games/supercar-showdown/en/#t-ss-S" ><span class="glyphicon glyphicon-sunglasses"></span> Rallipeli</a></li>

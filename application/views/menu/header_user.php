@@ -84,7 +84,7 @@ header("location: login");
       
       </ul>
       <ul class="nav navbar-nav navbar-right">
-      <li> <a>Kirjautunut:</a></li>
+      <p class="navbar-text">Kirjautunut: </p>
           <li> <a <?php echo "Hello <b id='welcome'>" . $username . "</b>";?></a></li>
 
           <li><a href="http://[::1]/bussikortti/index.php/user_authentication/logout" ><span class="glyphicon glyphicon-log-out"></span> Kirjaudu ulos</a></li>
