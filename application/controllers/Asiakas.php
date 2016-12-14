@@ -55,6 +55,30 @@ public function index() {
 			$this->load->view('menu/sisalto',$data);
 		}
 		
+	
+
+		public function nayta_poistettavat() 
+			{
+			$data['asiakkaat']=$this->Asiakas_model->getAsiakas();
+			$data['sivun_sisalto']='asiakas/poista';
+			$this->load->view('menu/sisalto',$data);
+			}
+			
+		public function poista($id)
+			{
+			//$this->load->model('Asiakas_model');
+			$poista=$this->Asiakas_model->delAsiakas($id);
+			if ($poista>0) 
+			{
+			echo '<script>alert("poisto onnistui")</script>';
+			}
+
+			$data['asiakkaat']=$this->Asiakas_model->getAsiakas();
+			$data['sivun_sisalto']='asiakas/listaa';
+			$this->load->view('menu/sisalto',$data);
+		}
+	
+
 		public function paivita_asiakas()
 		{
 			$btn=$this->input->post('btnTallenna');
@@ -77,31 +101,7 @@ public function index() {
 			echo '<script>alert("Päivitys epäonnistui")</script>';
 				}
 			}
-		}	
-
-			public function nayta_poistettavat() 
-			{
-			$data['asiakkaat']=$this->Asiakas_model->getAsiakas();
-			$data['sivun_sisalto']='asiakas/poista';
-			$this->load->view('menu/sisalto',$data);
-			}
-			
-			public function poista($id)
-			{
-			//$this->load->model('Asiakas_model');
-			$poista=$this->Asiakas_model->delAsiakas($id);
-			if ($poista>0) 
-			{
-			echo '<script>alert("poisto onnistui")</script>';
-			}
-
-			$data['asiakkaat']=$this->Asiakas_model->getAsiakas();
-			$data['sivun_sisalto']='asiakas/listaa';
-			$this->load->view('menu/sisalto',$data);
 		}
-
-
-
 
 		public function muokkaa_asiakkaat()
 		{

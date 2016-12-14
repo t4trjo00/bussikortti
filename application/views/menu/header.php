@@ -78,6 +78,8 @@ header("location: login");
       <ul class="nav navbar-nav">
        
 		    <li><a href="<?php echo site_url('asiakas/listaa'); ?>">Asiakas</a></li>
+        
+        
 		    <li><a href="<?php echo site_url('asiakas/lisaa'); ?>">Lisää asiakas</a></li>
         <li><a href="<?php echo site_url('asiakas/nayta_poistettavat'); ?>">Poista asiakas</a></li>
 		    <li><a href="<?php echo site_url('Kortti/listaa_kortti'); ?>">Kortti</a></li>
@@ -86,12 +88,20 @@ header("location: login");
       
       </ul>
       <ul class="nav navbar-nav navbar-right">
-      <li> <a>logged in as:</a></li>
+      <p class="navbar-text">Kirjautunut: </p>
+      
           <li> <a <?php echo "Hello <b id='welcome'>" . $username . "</b>";?></a></li>
 
-          <li><a href="http://[::1]/bussikortti/index.php/user_authentication/logout" ><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+          <li><a href="http://[::1]/bussikortti/index.php/user_authentication/logout" ><span class="glyphicon glyphicon-log-out"></span> Kirjaudu ulos</a></li>
         
       </ul>
+
+
+
+
+
+
+
     </div>
   </div>
 </nav>

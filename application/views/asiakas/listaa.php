@@ -1,3 +1,4 @@
+<form action="paivita_toiminnassa" method="POST">
 
 <?php
 
@@ -19,6 +20,12 @@ header("location: login");
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
+
+
+<style type="text/css">
+   body { background: #d1b8ff !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+</style>
+
 
 <div class="container">
 

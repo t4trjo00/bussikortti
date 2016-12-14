@@ -24,13 +24,10 @@ header("location: login");
 
 <h1>Muokkaa asiakkaiden tietoja</h1>
 
-
 <table class="table table-striped table-bordered table-hover table-condensed">
-
-
 <form action="muokkaa_asiakkaat" method="POST">
 <TABLE>
-<tr><th>Etunimi</th><th>Sukunimi</th><th>Email</th><th>Puhelin</th></tr>
+<tr><th>Etunimi</th><th>Sukunimi</th><th>Email</th><th>Puhelin</th></tr> 
 
 <?php
 foreach ($asiakkaat as $rivi) {

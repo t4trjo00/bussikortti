@@ -3,7 +3,7 @@
 
 //session_start(); //we need to start session in order to access it through CI
 
-Class user_authentication extends CI_Controller {
+Class User_authentication extends CI_Controller {
 
 public function __construct() {
 parent::__construct();
@@ -49,6 +49,7 @@ $result = $this->login_database->read_user_information($username);
 if ($result != false) {
 $session_data = array(
 'username' => $result[0]->un_tunnus,
+'id_tunnus'=>$result[0]->id_tunnus,
 'admin'=>$result[0]->admin);
 
 

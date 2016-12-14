@@ -73,7 +73,7 @@ header("location: http://localhost/login/index.php/user_authentication/user_logi
     <br/>
     <br>
      <div class="col-sm-offset-1 col-sm-1">
-      <input type="submit" value=" Login " name="submit"/><br />
+      <input type="submit" value=" Kirjaudu " name="submit"/><br />
       </div>
 <!-- <a href="<?php //echo base_url() ?>index.php/user_authentication/user_registration_show">To SignUp Click Here</a>  -->
 <?php echo form_close(); ?>

@@ -3,10 +3,7 @@
 <html>
 <?php
 
-
-
-if (isset($this->session->userdata['logged_in'])) {
-	
+if (isset($this->session->userdata['logged_in'])) {	
 $username = ($this->session->userdata['logged_in']['username']);
 $admin = ($this->session->userdata['logged_in']['admin']);
 if($admin==1);
@@ -30,17 +27,14 @@ header("location: login");
 	<h1>Kortit</h1>
 	<table class="table table-bordered table-hover table-condensed">
 
+
+		<br>
 		<p>Adminin sivu</p>
-		<p>Adminin sivu</p>
-		<p>Adminin sivu</p>
-		<p>Adminin sivu</p>
-		<p>Adminin sivu</p>
-		<p>Adminin sivu</p>
-		<p>Adminin sivu</p>
+<
 
 
 
-<img id="image1" src="<?php echo base_url('/style/images/Koala.jpg'); ?>"  width="304" height="236" />
+<!-- <img id="image1" src="<?php echo base_url('/style/images/Koala.jpg'); ?>"  width="304" height="236" /> -->
 
 
 
@@ -59,11 +53,11 @@ header("location: login");
 
 
 echo "Your Username is " . $username;
-
-
+//$id_tunnus = ($this->session->userdata['logged_in']['id_tunnus']);
 
 
 ?>
+
 
 
 

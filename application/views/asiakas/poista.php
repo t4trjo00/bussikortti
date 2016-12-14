@@ -34,15 +34,24 @@ header("location: login");
 <?php
 foreach ($asiakkaat as $rivi) {
 	echo '<tr><td>'.$rivi['etunimi'].'</td><td>'.$rivi['sukunimi'].'</td><td>';
-	echo '<a href="poista/';
-	echo $rivi['id_asiakas'].'">Poista</a>';
-	echo '</td></tr>';
+	echo "<a onclick='javascript:varmistaPoisto($(this));return false;' href='poista/".$rivi['id_asiakas']."'>Poista</a>";
+}
+?>
 
 
 
+<script>
+function varmistaPoisto(anchor)
+{
+   var conf = confirm('Haluatko varmasti poistaa tämän asiakkaan?');
+   if(conf)
+      window.location=anchor.attr("href");
 }
 
-?>
+</script>
+
+
+
 
 
 </table>

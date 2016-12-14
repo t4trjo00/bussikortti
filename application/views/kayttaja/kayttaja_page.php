@@ -16,34 +16,21 @@
 <h1>Kortit</h1>
 
 <p>Käyttäjän sivu</p>
-<p>Käyttäjän sivu</p>
-<p>Käyttäjän sivu</p>
-<p>Käyttäjän sivu</p>
-<p>Käyttäjän sivu</p>
-<p>Käyttäjän sivu</p>
 
-<table class="table table-bordered table-hover table-condensed">
-
-
-
-
-<tr><th>id_kortti</th><th>Pin</th><th>Saldo</th><th>asiakas id</th></tr>
-<?php
-foreach ($kortit as $rivi) 
-{
-	echo '<tr><td>'
-	.$rivi['pin_kortti'].'</td><td>'
-	.$rivi['saldo'].'</td><td>'
-	.$rivi['asiakas_id_asiakas'].'</td><td>'
-	
-}
-
-
-
-?>
-
-
-
-
-</table>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

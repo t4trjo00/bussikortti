@@ -9,7 +9,9 @@
 <body>
 
 <div class="container">
-<img src="http://www.koirakissaklinikka.fi/images/artikkelit/kissa-artikkelit/kissalaihdutus.jpg" />
+<!-- <img src="http://www.koirakissaklinikka.fi/images/artikkelit/kissa-artikkelit/kissalaihdutus.jpg" /> -->
+<img src="http://setosa.io/bus/styles/busicon-01.svg" />
+
   <div class="jumbotron">
     <h1>Bussikortti järjestelmän etusivu</h1>
     <p>Hieno juttu</p> 
@@ -28,7 +30,5 @@
 
 
 </div>
-<?php 
-$id_tunnus = ($this->session->userdata['logged_in']['id_tunnus']);
-echo "Your Username is " . $id_tunnus; ?>
+
 
