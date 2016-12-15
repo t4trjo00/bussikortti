@@ -9,4 +9,12 @@ class Kortti_model extends CI_Model
 
 	}
 
+	public function delKortti($id)
+	{
+		$this->db->where('asiakas_id_asiakas',$id);
+		$this->db->delete('kortti');
+		$testi=$this->db->affected_rows();
+		return $testi;
+
+	}
 }

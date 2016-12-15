@@ -20,7 +20,9 @@ header("location: login");
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-
+<style type="text/css">
+   body { background: #eeeeee !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+</style>
 <div class="container">
 
 
@@ -31,7 +33,7 @@ header("location: login");
 
 
 
-<tr><th>id_kortti</th><th>Pin</th><th>Saldo</th><th>asiakas id</th><th>Maksu id</th></tr>
+<tr><th>id_kortti</th><th>Pin</th><th>Saldo</th><th>asiakas id</th><th>Maksu id</th><th>Kortin poisto</th></tr>
 <?php
 foreach ($kortit as $rivi) 
 {
@@ -40,13 +42,22 @@ foreach ($kortit as $rivi)
 	.$rivi['pin_kortti'].'</td><td>'
 	.$rivi['saldo'].'</td><td>'
 	.$rivi['asiakas_id_asiakas'].'</td><td>'
-	.$rivi['maksu_id_maksu'].'</td></tr>';
+	.$rivi['maksu_id_maksu'].'</td><td>';
+	echo "<a onclick='javascript:varmistaPoistokortti($(this));return false;' href='poista_kortti/".$rivi['asiakas_id_asiakas']."'>Poista</a>";
 }
 
 
 
 ?>
+<script>
+function varmistaPoistokortti(anchor)
+{
+   var conf = confirm('Haluatko varmasti poistaa tämän kortin?');
+   if(conf)
+      window.location=anchor.attr("href");
+}
 
+</script>
 
 
 

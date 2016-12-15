@@ -19,7 +19,9 @@ header("location: login");
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-
+<style type="text/css">
+   body { background: #eeeeee !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+</style>
 <div class="container">
 
 <h1>Poista asiakas</h1>

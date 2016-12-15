@@ -20,6 +20,10 @@ header("location: http://localhost/login/index.php/user_authentication/user_logi
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Open+Sans+Condensed:300|Raleway' rel='stylesheet' type='text/css'>
 </head>
 <body>
+<style type="text/css">
+   body { background: #eeeeee !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+</style>
+
 <?php
 
   if (isset($logout_message)) {

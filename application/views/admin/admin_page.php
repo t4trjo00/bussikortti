@@ -30,7 +30,9 @@ header("location: login");
 
 		<br>
 		<p>Adminin sivu</p>
-<
+TÄMÄ ON TURHA TURHUUS SIVU LEHTI
+TÄMÄ ON TURHA TURHUUS SIVU LEHTI
+TÄMÄ ON TURHA TURHUUS SIVU LEHTI
 
 
 
@@ -38,7 +40,7 @@ header("location: login");
 
 
 
-		<tr><th>id_kortti</th><th>Pin</th><th>Saldo</th><th>asiakas id</th><th>Maksu id</th></tr>
+		<tr><th>id_kortti</th><th>Pin</th><th>Saldo</th><th>asiakas id</th><th>Maksu id</th><th>Poista kortti</th></tr>
 <?php
 	foreach ($kortit as $rivi) 
 {
@@ -47,18 +49,27 @@ header("location: login");
 	.$rivi['pin_kortti'].'</td><td>'
 	.$rivi['saldo'].'</td><td>'
 	.$rivi['asiakas_id_asiakas'].'</td><td>'
-	.$rivi['maksu_id_maksu'].'</td></tr>';
+	.$rivi['maksu_id_maksu'].'</td><td>';
+	echo "<a onclick='javascript:varmistaPoistokortti($(this));return false;' href='poista_kortti/".$rivi['asiakas_id_asiakas']."'>Poista</a>";
 }
 
 
 
-echo "Your Username is " . $username;
+//echo "Your Username is " . $username;
 //$id_tunnus = ($this->session->userdata['logged_in']['id_tunnus']);
 
 
 ?>
 
+<script>
+function varmistaPoistokortti(anchor)
+{
+   var conf = confirm('Haluatko varmasti poistaa tämän kortin?');
+   if(conf)
+      window.location=anchor.attr("href");
+}
 
+</script>
 
 
 

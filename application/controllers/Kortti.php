@@ -21,5 +21,23 @@ public function index() {
 			$data['sivun_sisalto']='kortti/listaa_kortti';
 			$this->load->view('menu/sisalto',$data);
 		}
+
+		public function poista_kortti($id)
+			{
+			$this->load->model('Kortti_model');
+			$poista=$this->Kortti_model->delKortti($id);
+			if ($poista>0) 
+			{
+			echo '<script>alert("poisto onnistui")</script>';
+			}
+			else {
+			echo '<script>alert("Päivitys epäonnistui")</script>';
+				}
+
+			$data['kortit']=$this->Kortti_model->getKortti();
+			$data['sivun_sisalto']='kortti/listaa_kortti';
+			$this->load->view('menu/sisalto',$data);
+		}
+	
 }
  
