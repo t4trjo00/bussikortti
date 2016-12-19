@@ -28,12 +28,9 @@ header("location: login");
 
 <h1>Kortit</h1>
 
-<table class="table table-bordered table-hover table-condensed">
+<table class="table table-striped table-bordered table-hover table-condensed">
 
-
-
-
-<tr><th>id_kortti</th><th>Pin</th><th>Saldo</th><th>asiakas id</th><th>Maksu id</th><th>Kortin poisto</th></tr>
+<tr><th>id_kortti</th><th>Pin</th><th>Saldo</th><th>asiakas id</th><th>Kortin poisto</th></tr>
 <?php
 foreach ($kortit as $rivi) 
 {
@@ -41,14 +38,12 @@ foreach ($kortit as $rivi)
 	.$rivi['id_kortti'].'</td><td>'
 	.$rivi['pin_kortti'].'</td><td>'
 	.$rivi['saldo'].'</td><td>'
-	.$rivi['asiakas_id_asiakas'].'</td><td>'
-	.$rivi['maksu_id_maksu'].'</td><td>';
+	.$rivi['asiakas_id_asiakas'].'</td><td>';
+	
 	echo "<a onclick='javascript:varmistaPoistokortti($(this));return false;' href='poista_kortti/".$rivi['asiakas_id_asiakas']."'>Poista</a>";
 }
-
-
-
 ?>
+
 <script>
 function varmistaPoistokortti(anchor)
 {
@@ -58,8 +53,5 @@ function varmistaPoistokortti(anchor)
 }
 
 </script>
-
-
-
 </table>
 </div>

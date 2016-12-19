@@ -1,6 +1,7 @@
 <?php
 class Asiakas_model extends CI_Model 
 {
+	// Hakee asiakkaan kaikki tiedot 
 	public function getAsiakas()
 	{
 		$this->db->select('id_asiakas,etunimi,sukunimi,email,puhelin');
@@ -8,7 +9,7 @@ class Asiakas_model extends CI_Model
 		return $this->db->get()->result_array();
 
 	}
-	
+	//Lisää uuden asiakkaan asiakastableen
 	public function addAsiakas($lisaa_asiakas)
 	{
 		$this->db->set($lisaa_asiakas);
@@ -18,7 +19,7 @@ class Asiakas_model extends CI_Model
 
 
 	}
-
+	//Päivittää asiakkaan tietoja uudella datalla
 	public function updateValittuAsiakas($uusiData,$id)
 	{
 		$this->db->where('id_asiakas', $id);
@@ -27,7 +28,7 @@ class Asiakas_model extends CI_Model
 		return $testi;
 
 	}
- 
+ 	//Poistaa asiakastaulusta asiakkaan id:n perusteella
 	public function delAsiakas($id)
 	{
 		$this->db->where('id_asiakas',$id);

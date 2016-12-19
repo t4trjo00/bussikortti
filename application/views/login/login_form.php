@@ -79,7 +79,7 @@ header("location: http://localhost/login/index.php/user_authentication/user_logi
      <div class="col-sm-offset-1 col-sm-1">
       <input type="submit" value=" Kirjaudu " name="submit"/><br />
       </div>
-<!-- <a href="<?php //echo base_url() ?>index.php/user_authentication/user_registration_show">To SignUp Click Here</a>  -->
+
 <?php echo form_close(); ?>
 </form>
 
@@ -89,54 +89,4 @@ header("location: http://localhost/login/index.php/user_authentication/user_logi
 </html>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<link rel="stylesheet" type="text/css" href="<?php //echo base_url('style/css/bootstrap.min.css');?>">
- <head>
-   
- </head>
- <body>
-   <h1>Kirjaudu sisään</h1>
-
-   <?php //echo validation_errors(); ?>
-   <?php //echo form_open('verifylogin'); ?>
-
-     <label for="username">Username:</label>
-     <input type="text" size="20" id="username" name="username"/>
-
-     <br/>
-
-     <label for="password">Password:</label>
-     <input type="password" size="20" id="passowrd" name="password"/>
-     <br/>
-
-     <input type="submit" value="Login"/>
-
-   </form>
- </body>
-</html>
-
-
--->
 

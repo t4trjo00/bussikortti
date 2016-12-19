@@ -32,7 +32,7 @@ header("location: login");
 
 
 <h1>Asiakkaat</h1>
-<table class="table table-bordered table-hover table-condensed">
+<table class="table table-striped table-bordered table-hover table-condensed">
 <tr><th>Etunimi</th><th>Sukunimi</th><th>Sähköposti</th><th>Puhelin</th><th>Muokkaa</th></tr>
 <?php
 foreach ($asiakkaat as $rivi) 

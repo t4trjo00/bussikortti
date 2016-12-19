@@ -16,16 +16,16 @@
 
 <h1>Kortit</h1>
 
-<table class="table table-bordered table-hover table-condensed">
+<table class="table table-striped table-bordered table-hover table-condensed">
 <tr><th>Käyttäjänimi</th><th>Saldo</th><th>Toiminnassa</th></tr>
 
 <?php
 
 $username = ($this->session->userdata['logged_in']['username']);
-echo "Your Username is " . $username;
+/*echo "Your Username is " . $username;
 
 $id_tunnus = ($this->session->userdata['logged_in']['id_tunnus']);
-echo "  and your Userid is " . $id_tunnus;
+echo "  and your Userid is " . $id_tunnus;*/
 
 foreach ($kortit as $rivi) 
 {
@@ -36,44 +36,16 @@ foreach ($kortit as $rivi)
 
 }
 
-
-
 ?>
-	<div>
+	 <div>
 	</div>
-
-
-
 </table>
 
 
-<input type="submit" name="btnKuolleta" value="Kuolleta kortti" />
 
 <a href="nayta_muokattava_saldo"><BUTTON>Lisää saldoa</BUTTON></a>
 
 
-
-
-
-
-
-
-
-
-
-<!--
-<input type="button" name="Release" onclick="hello()" value="Click to Release" />
-
-
-<script>
-function paivita_toiminnassa() {
-    $.get("Kayttaja.php");
-    return false;
-}
-</script>
-
-<a href="<?php echo site_url('kayttaja/kayttaja_page'); ?>" onclick="paivita_toiminnassa();">Kuolleta kortti</a>
--->
 
 
 </div>

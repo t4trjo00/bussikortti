@@ -22,7 +22,6 @@ public function index() {
 			$this->load->model('Kayttaja_model');
 			$data['kortit']=$this->Kayttaja_model->getKortti_kayttaja();
 			$data['sivun_sisalto']='kortti/listaa_kortti_kayttaja';
-			//$data['sivun_sisalto']='Kayttaja/kayttaja_page';
 			$this->load->view('menu/sisalto',$data);
 		}
 

@@ -43,7 +43,7 @@ foreach ($asiakkaat as $rivi) {
 
 
 <script>
-function varmistaPoisto(anchor)
+function varmistaPoisto(anchor)   //Popup-ikkuna jossa varmistetaan asiakkaan poisto
 {
    var conf = confirm('Haluatko varmasti poistaa tämän asiakkaan?');
    if(conf)

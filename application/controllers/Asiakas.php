@@ -66,7 +66,6 @@ public function index() {
 			
 		public function poista($id)
 			{
-			//$this->load->model('Asiakas_model');
 			$poista=$this->Asiakas_model->delAsiakas($id);
 			if ($poista>0) 
 			{

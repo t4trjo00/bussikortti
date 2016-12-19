@@ -84,7 +84,7 @@ header("location: login");
         <li><a href="<?php echo site_url('asiakas/nayta_poistettavat'); ?>">Poista asiakas</a></li>
 		    <li><a href="<?php echo site_url('Kortti/listaa_kortti'); ?>">Kortti</a></li>
 		    
-        <li><a href="<?php echo site_url('admin/admin_page'); ?>">Oma sivu</a></li>
+        
       
       </ul>
       <ul class="nav navbar-nav navbar-right">
